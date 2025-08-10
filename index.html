@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integrated Document Preview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    .preview-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0078d4; /* Microsoft Blue */
+      color: white;
+      padding: 16px 24px;
+    }
+    .header .service {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .iframe-wrapper {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .source-bar {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 24px;
+      background-color: #f1f1f1;
+      font-size: 14px;
+      color: #333;
+    }
+    .source-bar span {
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-container">
+    <div class="header">
+      <div class="service">Google Docs Preview via SharePoint</div>
+      <div>🔐 Integrated View</div>
+    </div>
+    <iframe class="iframe-wrapper" src="https://docs.google.com/viewer?srcid=1D9pZzjcWgzQrc1X_gWZMCkjQfH77peys&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+    <div class="source-bar">
+      <div>📄 Source: <span>Google Docs</span></div>
+      <div> Hosted via: <span>SharePoint Online</span></div>
+    </div>
+  </div>
+</body>
+</html>
